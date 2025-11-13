@@ -1,0 +1,77 @@
+[
+  {
+    "Name": "default",
+    "Uri": "https://localhost",
+    "Accept": "text/html",
+    "TimeoutSeconds": 30,
+    "PooledLifetimeMinutes": 2,
+    "ConnectTimeoutSeconds": 10,
+    "ContinueTimeoutSeconds": 1,
+    "CookiePersistenceEnabled": true,
+    "PingDelaySeconds": 15,
+    "PingTimeoutSeconds": 5,
+    "IdleTimeoutMinutes": 1,
+    "MaxConnections": 10,
+    "MultiHttp2Connections": true,
+    "MultiHttp3Connections": true,
+    "AutoRedirect": true,
+    "MaxAutomaticRedirections": 10,
+    "StreamWindowSize": 131072,
+    "UseCookies": true,
+    "UseProxy": true,
+    "Decompression": "GZip,Deflate,Brotli",
+    "DefaultRequestHeaders": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.3"
+    }
+  },
+  {
+    "Name": "x.com",
+    "Uri": "https://x.com/home",
+    "Accept": "text/html",
+    "TimeoutSeconds": 30,
+    "PooledLifetimeMinutes": 2,
+    "ConnectTimeoutSeconds": 10,
+    "ContinueTimeoutSeconds": 1,
+    "CookiePersistenceEnabled": true,
+    "PingDelaySeconds": 15,
+    "PingTimeoutSeconds": 5,
+    "IdleTimeoutMinutes": 1,
+    "MaxConnections": 10,
+    "MultiHttp2Connections": true,
+    "MultiHttp3Connections": true,
+    "AutoRedirect": true,
+    "MaxAutomaticRedirections": 10,
+    "StreamWindowSize": 131072,
+    "UseCookies": true,
+    "UseProxy": true,
+    "Decompression": "GZip,Deflate,Brotli",
+    "DefaultRequestHeaders": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.3"
+    }
+  },
+  {
+    "Name": "google.com",
+    "Uri": "https://google.com",
+    "Accept": "text/html",
+    "TimeoutSeconds": 30,
+    "PooledLifetimeMinutes": 2,
+    "ConnectTimeoutSeconds": 10,
+    "ContinueTimeoutSeconds": 1,
+    "CookiePersistenceEnabled": true,
+    "PingDelaySeconds": 15,
+    "PingTimeoutSeconds": 5,
+    "IdleTimeoutMinutes": 1,
+    "MaxConnections": 10,
+    "MultiHttp2Connections": true,
+    "MultiHttp3Connections": true,
+    "AutoRedirect": true,
+    "MaxAutomaticRedirections": 10,
+    "StreamWindowSize": 131072,
+    "UseCookies": true,
+    "UseProxy": true,
+    "Decompression": "GZip,Deflate,Brotli",
+    "DefaultRequestHeaders": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.3"
+    }
+  }
+]

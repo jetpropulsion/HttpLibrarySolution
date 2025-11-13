@@ -1,0 +1,5 @@
+{
+ "DefaultsConfigFile": "defaults.json",
+ "ClientsConfigFile": "clients.json",
+ "CookiesFile": "cookies.json"
+}

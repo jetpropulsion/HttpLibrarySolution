@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<Nullable>enable</Nullable>
+		<TargetFramework>net9.0</TargetFramework>
+		<PublishAot>true</PublishAot>
+		<InvariantGlobalization>false</InvariantGlobalization>
+		<EnableTrimAnalyzer>true</EnableTrimAnalyzer>
+		<EnableSingleFileAnalyzer>true</EnableSingleFileAnalyzer>
+		<EnableAotAnalyzer>true</EnableAotAnalyzer>
+		<IlcOptimizationPreference>Speed</IlcOptimizationPreference>
+		<IlcGenerateStackTraceData>false</IlcGenerateStackTraceData>
+		<!-- Multi-platform support -->
+		<RuntimeIdentifiers>win-x64;linux-x64;osx-x64;osx-arm64</RuntimeIdentifiers>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\HttpLibrary\HttpLibrary.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Serilog" Version="4.3.0" />
+		<PackageReference Include="Serilog.Sinks.Console" Version="6.1.1" />
+		<PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.9" />
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.9" />
+		<PackageReference Include="Serilog.Extensions.Logging" Version="9.0.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Helpers\" />
+	</ItemGroup>
+
+	<!-- Configuration files synchronized via Directory.Build.props -->
+	<!-- MSBuild limitation workaround: Use BeforeTargets="BeforeBuild" to ensure files are included early -->
+	<Target Name="AddConfigurationFiles" BeforeTargets="BeforeBuild">
+		<ItemGroup>
+			<None Include="$(ConfigFileCookies)" Condition="Exists('$(ConfigFileCookies)')">
+				<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			</None>
+			<None Include="$(ConfigFileDefaults)" Condition="Exists('$(ConfigFileDefaults)')">
+				<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			</None>
+			<None Include="$(ConfigFileClients)" Condition="Exists('$(ConfigFileClients)')">
+				<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			</None>
+			<None Include="$(ConfigFileApplication)" Condition="Exists('$(ConfigFileApplication)')">
+				<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			</None>
+		</ItemGroup>
+		<Message Text="Added config files: $(ConfigFileCookies), $(ConfigFileDefaults), $(ConfigFileClients), $(ConfigFileApplication)" Importance="high" />
+	</Target>
+
+</Project>

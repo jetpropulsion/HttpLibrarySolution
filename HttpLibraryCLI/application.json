@@ -1,0 +1,37 @@
+{
+	"ApplicationSettings": {
+		"EnableCertificatePinning": false,
+		"EnableCustomDns": true,
+		"EnableTrafficMonitoring": true,
+		"EnableMutualTls": false,
+		"CertificatePinning": {
+			"PinnedThumbprints": [
+				"AAF4B37F06691AC5497A63868EFFF8EA632300F7",
+				"BBF4B37F06691AC5497A63868EFFF8EA632300F8"
+			]
+		},
+		"CustomDns": {
+			"SocketOptions": {
+				"NoDelay": true,
+				"SendTimeout": 5000,
+				"ReceiveTimeout": 5000,
+				"SendBufferSize": 65536,
+				"ReceiveBufferSize": 65536
+			}
+		},
+		"MutualTls": {
+			"CertificateSubjectName": "MyClientCert",
+			"StoreLocation": "CurrentUser",
+			"StoreName": "My"
+		},
+		"FileUpload": {
+			"MaxFileSizeBytes": 100000000
+		},
+		"ProgressDisplay": {
+			"MinimumFileSizeBytes": 1048576,
+			"ProgressEventGranularityBytes": 65536,
+			"ProgressUpdateDeltaBytes": 16384,
+			"ProgressUpdateIntervalMilliseconds": 150
+		}
+	}
+}

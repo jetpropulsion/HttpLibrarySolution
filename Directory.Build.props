@@ -1,0 +1,17 @@
+<Project>
+	<PropertyGroup>
+		<!-- Configuration file names - single source of truth -->
+		<ConfigFileCookies>cookies.json</ConfigFileCookies>
+		<ConfigFileClients>clients.json</ConfigFileClients>
+		<ConfigFileDefaults>defaults.json</ConfigFileDefaults>
+		<ConfigFileApplication>application.json</ConfigFileApplication>
+		<!-- New: centralized library configuration file that declares paths for the above files -->
+		<ConfigFileLibrary>HttpLibraryConfiguration.json</ConfigFileLibrary>
+		
+		<!-- Logging configuration -->
+		<LogOutputPath>logs\httplibrary-.log</LogOutputPath>
+		
+		<!-- Treat all warnings as errors to enforce zero-warnings policy -->
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+	</PropertyGroup>
+</Project>

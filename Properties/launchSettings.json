@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Fetch": {
+      "commandName": "Project",
+      "commandLineArgs": " https://www.kurir.rs"
+    }
+  }
+}

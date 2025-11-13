@@ -1,0 +1,42 @@
+{
+	"ConfigVersion": 1,
+	"Clients": [
+		{
+			"Name": "default",
+			"Uri": "https://localhost",
+			"Timeout": "00:01:00",
+			"UseCookies": true,
+			"CookiePersistenceEnabled": true,
+			"AllowAutoRedirect": false,
+			"MaxRedirections": 10
+		},
+		{
+			"Name": "google",
+			"Uri": "https://google.com",
+			"Timeout": "00:01:00",
+			"UseCookies": true,
+			"CookiePersistenceEnabled": true,
+			"AllowAutoRedirect": false,
+			"MaxRedirections": 10
+		},
+		{
+			"Name": "bvk",
+			"Uri": "https://www.bvk.rs",
+			"Timeout": "00:01:00",
+			"UseCookies": true,
+			"CookiePersistenceEnabled": true,
+			"AllowAutoRedirect": false,
+			"MaxRedirections": 10
+		},
+		{
+			"Name": "edb",
+			"Uri": "https://elektrodistribucija.rs",
+			"Timeout": "00:01:00",
+			"UseCookies": true,
+			"CookiePersistenceEnabled": true,
+			"AllowAutoRedirect": false,
+			"MaxRedirections": 10
+		}
+	]
+}
+

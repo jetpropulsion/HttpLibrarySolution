@@ -1,0 +1,31 @@
+{
+	"DefaultRequestVersion": "2.0",
+	"DefaultRequestHeaders": {
+		"Accept": "text/html",
+		"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.3",
+		"X-Forwarded-For": null
+	},
+	"AutomaticDecompression": "All",
+	"PooledConnectionLifetime": "00:02:00",
+	"MaxConnectionsPerServer": 2147483647,
+	"Timeout": "00:00:30",
+
+	"ConnectTimeout": "00:00:10",
+	"Expect100ContinueTimeout": "00:00:01",
+	"KeepAlivePingDelay": "00:00:15",
+	"KeepAlivePingTimeout": "00:00:05",
+	"PooledConnectionIdleTimeout": "00:01:00",
+	"InitialHttp2StreamWindowSize": 131072,
+	"EnableMultipleHttp2Connections": false,
+	"EnableMultipleHttp3Connections": false,
+	"AllowAutoRedirect": false,
+	"MaxAutomaticRedirections": 10,
+	"UseCookies": true,
+	"UseProxy": false,
+	"HttpProxy": null,
+	"HttpsProxy": null,
+	"ProxyUsername": null,
+	"ProxyPassword": null,
+	"ProxyBypassList": null,
+	"CookiePersistenceEnabled": true
+}
